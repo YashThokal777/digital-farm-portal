@@ -123,8 +123,8 @@ async function logAuditEntry(req, action, responseData) {
     try {
         const db = req.app.locals.db;
         const userId = req.user?.id || null;
-        const ipAddress = req.ip || req.connection.remoteAddress;
-        const userAgent = req.get('User-Agent');
+        const ipAddress = req.ip || req.connection?.remoteAddress || null;
+        const userAgent = req.get('User-Agent') || null;
 
         await db.execute(
             `INSERT INTO audit_log (user_id, action, table_name, record_id, new_values, ip_address, user_agent) 

@@ -149,8 +149,8 @@ router.post('/login', auditLog('USER_LOGIN'), async (req, res) => {
             [
                 user.id,
                 token,
-                req.ip || req.connection.remoteAddress,
-                req.get('User-Agent'),
+                req.ip || req.connection?.remoteAddress || null,
+                req.get('User-Agent') || null,
                 expiresAt
             ]
         );
