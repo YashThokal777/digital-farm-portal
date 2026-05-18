@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-01-08T13:30:00.000Z" agent="5.0" etag="def456" version="22.1.16" type="device">
+  <diagram name="Digital Farm Portal Use Case Diagram - Basic Functions" id="use-case-diagram-basic">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary -->
+        <mxCell id="system-boundary" value="Digital Farm Portal System" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="700" height="500" as="geometry" />
+        </mxCell>
+        
+        <!-- Core Use Cases -->
+        <mxCell id="uc-login" value="Login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-validate-credentials" value="Validate Credentials" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-manage-farm" value="Manage Farm" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-add-farm" value="Add Farm" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-modify-farm" value="Modify Farm" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="170" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-delete-farm" value="Delete Farm" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-manage-animals" value="Manage Animals" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-add-animal" value="Add Animal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="350" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-modify-animal" value="Modify Animal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-delete-animal" value="Delete Animal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-view-reports" value="View Reports" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-generate-report" value="Generate Report" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="550" y="80" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-export-report" value="Export Report" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="720" y="250" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-schedule-report" value="Schedule Report" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="720" y="300" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Extended Use Cases -->
+        <mxCell id="uc-advanced-analytics" value="Advanced Analytics" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="750" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-health-tracking" value="Health Tracking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-vaccination-schedule" value="Vaccination Schedule" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="650" y="400" width="90" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-inventory-management" value="Inventory Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-low-stock-alert" value="Low Stock Alert" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-compliance-audit" value="Compliance Audit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc-regulatory-report" value="Regulatory Report" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="250" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Actors with Generalization -->
+        <mxCell id="actor-user" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-admin" value="System Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-manager" value="Farm Manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="150" y="350" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-worker" value="Farm Worker" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-vet" value="Veterinarian" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- GENERALIZATION Relationships (Inheritance) -->
+        <mxCell id="gen-admin" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="actor-admin" target="actor-user">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gen-manager" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="actor-manager" target="actor-user">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gen-worker" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="actor-worker" target="actor-user">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- INCLUDE Relationships -->
+        <mxCell id="include-login-validate" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-login" target="uc-validate-credentials">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include-login-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="330" y="65" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="include-farm-login" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-manage-farm" target="uc-login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include-farm-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="130" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="include-animals-login" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-manage-animals" target="uc-login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include-animals-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="130" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="include-reports-generate" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-view-reports" target="uc-generate-report">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include-reports-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="130" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="include-generate-login" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-generate-report" target="uc-login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include-generate-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="65" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <!-- EXTEND Relationships -->
+        <mxCell id="extend-add-farm" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-add-farm" target="uc-manage-farm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-add-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-modify-farm" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-modify-farm" target="uc-manage-farm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-modify-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-delete-farm" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-delete-farm" target="uc-manage-farm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-delete-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-add-animal" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-add-animal" target="uc-manage-animals">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-add-animal-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-modify-animal" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-modify-animal" target="uc-manage-animals">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-modify-animal-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="450" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-delete-animal" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-delete-animal" target="uc-manage-animals">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-delete-animal-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="230" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-export" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-export-report" target="uc-view-reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-export-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="210" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-schedule" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-schedule-report" target="uc-view-reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-schedule-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="260" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-analytics" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-advanced-analytics" target="uc-view-reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-analytics-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="180" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-health" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-health-tracking" target="uc-manage-animals">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-health-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="270" width="60" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-vaccination" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-vaccination-schedule" target="uc-health-tracking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-inventory-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="extend-compliance" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="uc-compliance-audit" target="uc-manage-farm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend-compliance-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Actor Associations -->
+        <mxCell id="admin-manage-farm" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-admin" target="uc-manage-farm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-view-reports" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-admin" target="uc-view-reports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-advanced-analytics" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-admin" target="uc-advanced-analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="manager-manage-farm" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-manager" target="uc-manage-farm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="manager-manage-animals" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-manager" target="uc-manage-animals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="manager-view-reports" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-manager" target="uc-view-reports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="manager-inventory" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-manager" target="uc-inventory-management">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="worker-manage-animals" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-worker" target="uc-manage-animals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="worker-health-tracking" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-worker" target="uc-health-tracking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="vet-health-tracking" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-vet" target="uc-health-tracking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="vet-manage-animals" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-vet" target="uc-manage-animals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Digital Farm Portal - Use Case Diagram (Basic Functions)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="500" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="150" width="120" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-title" value="Relationships" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="160" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-gen" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="190" as="sourcePoint" />
+            <mxPoint x="1070" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-gen-label" value="Generalization" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="185" width="60" height="10" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-include" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="210" as="sourcePoint" />
+            <mxPoint x="1070" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-include-label" value="&lt;&lt;include&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="205" width="60" height="10" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-extend" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="230" as="sourcePoint" />
+            <mxPoint x="1070" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-extend-label" value="&lt;&lt;extend&gt;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="225" width="60" height="10" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-assoc" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="250" as="sourcePoint" />
+            <mxPoint x="1070" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-assoc-label" value="Association" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="245" width="60" height="10" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

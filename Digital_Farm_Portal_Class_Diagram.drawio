@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" version="22.1.16" etag="abc123" type="device">
+  <diagram name="Class Diagram" id="class-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Digital Farm Portal - Class Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- User Base Class -->
+        <mxCell id="User" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="User-attributes" value="- id: int&#xa;- username: string&#xa;- password: string&#xa;- email: string&#xa;- role: string&#xa;- created_at: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="User">
+          <mxGeometry y="26" width="200" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="User-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="User">
+          <mxGeometry y="110" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="User-methods" value="+ login(): boolean&#xa;+ logout(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="User">
+          <mxGeometry y="118" width="200" height="22" as="geometry" />
+        </mxCell>
+        
+        <!-- SystemAdmin Class -->
+        <mxCell id="SystemAdmin" value="SystemAdmin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SystemAdmin-methods" value="+ manageUsers(): void&#xa;+ systemConfig(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SystemAdmin">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        
+        <!-- FarmManager Class -->
+        <mxCell id="FarmManager" value="FarmManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="280" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FarmManager-methods" value="+ manageFarm(): void&#xa;+ manageAnimals(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FarmManager">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        
+        <!-- Farm Class -->
+        <mxCell id="Farm" value="Farm" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Farm-attributes" value="- id: int&#xa;- name: string&#xa;- location: string&#xa;- owner_id: int&#xa;- farm_type: string&#xa;- total_area: float&#xa;- created_at: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Farm">
+          <mxGeometry y="26" width="200" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Farm-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Farm">
+          <mxGeometry y="130" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Farm-methods" value="+ addArea(): void&#xa;+ getAnimals(): Animal[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Farm">
+          <mxGeometry y="138" width="200" height="22" as="geometry" />
+        </mxCell>
+        
+        <!-- Animal Class -->
+        <mxCell id="Animal" value="Animal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="800" y="80" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Animal-attributes" value="- id: int&#xa;- tag_number: string&#xa;- species: string&#xa;- breed: string&#xa;- age: int&#xa;- weight: float&#xa;- farm_id: int&#xa;- health_status: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Animal">
+          <mxGeometry y="26" width="200" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="Animal-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Animal">
+          <mxGeometry y="150" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Animal-methods" value="+ updateHealth(): void&#xa;+ getHealthRecords(): HealthRecord[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Animal">
+          <mxGeometry y="158" width="200" height="22" as="geometry" />
+        </mxCell>
+        
+        <!-- HealthRecord Class -->
+        <mxCell id="HealthRecord" value="HealthRecord" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="80" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HealthRecord-attributes" value="- id: int&#xa;- animal_id: int&#xa;- checkup_date: date&#xa;- symptoms: string&#xa;- diagnosis: string&#xa;- treatment: string&#xa;- recorded_by: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HealthRecord">
+          <mxGeometry y="26" width="200" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="HealthRecord-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="HealthRecord">
+          <mxGeometry y="130" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="HealthRecord-methods" value="+ createRecord(): void&#xa;+ updateTreatment(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HealthRecord">
+          <mxGeometry y="138" width="200" height="22" as="geometry" />
+        </mxCell>
+        
+        <!-- Inventory Base Class -->
+        <mxCell id="Inventory" value="&lt;&lt;abstract&gt;&gt;&#xa;Inventory" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Inventory-attributes" value="- id: int&#xa;- name: string&#xa;- quantity: int&#xa;- unit: string&#xa;- farm_id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Inventory">
+          <mxGeometry y="40" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Inventory-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Inventory">
+          <mxGeometry y="110" width="200" height="8" as="geometry" />
+        </mxCell>
+        
+        <!-- Feed Class -->
+        <mxCell id="Feed" value="Feed" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Feed-attributes" value="- feed_type: string&#xa;- expiry_date: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Feed">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        
+        <!-- Medicine Class -->
+        <mxCell id="Medicine" value="Medicine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="550" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Medicine-attributes" value="- medicine_type: string&#xa;- dosage: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Medicine">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        
+        <!-- Equipment Class -->
+        <mxCell id="Equipment" value="Equipment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="750" y="500" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment-attributes" value="- equipment_type: string&#xa;- maintenance_date: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Equipment">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        
+        <!-- BiosecurityRecord Class -->
+        <mxCell id="BiosecurityRecord" value="BiosecurityRecord" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="800" y="320" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BiosecurityRecord-attributes" value="- id: int&#xa;- farm_id: int&#xa;- visitor_name: string&#xa;- entry_time: datetime&#xa;- exit_time: datetime&#xa;- disinfection_done: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BiosecurityRecord">
+          <mxGeometry y="26" width="200" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="BiosecurityRecord-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="BiosecurityRecord">
+          <mxGeometry y="120" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BiosecurityRecord-methods" value="+ logEntry(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BiosecurityRecord">
+          <mxGeometry y="128" width="200" height="12" as="geometry" />
+        </mxCell>
+        
+        <!-- Report Class -->
+        <mxCell id="Report" value="Report" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="320" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-attributes" value="- id: int&#xa;- report_type: string&#xa;- generated_by: int&#xa;- generated_at: datetime&#xa;- data: json&#xa;- farm_id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Report">
+          <mxGeometry y="26" width="200" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Report">
+          <mxGeometry y="120" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-methods" value="+ generateReport(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Report">
+          <mxGeometry y="128" width="200" height="12" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        
+        <!-- Generalization: User to SystemAdmin -->
+        <mxCell id="gen-admin" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="SystemAdmin" target="User">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Generalization: User to FarmManager -->
+        <mxCell id="gen-manager" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="FarmManager" target="User">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Association: Farm to Animal -->
+        <mxCell id="assoc-farm-animal" style="endArrow=none;html=1;" edge="1" parent="1" source="Farm" target="Animal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-farm-animal-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="150" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-farm-animal-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="780" y="150" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Directed Association: Animal to HealthRecord -->
+        <mxCell id="dir-assoc-animal-health" style="endArrow=classic;html=1;" edge="1" parent="1" source="Animal" target="HealthRecord">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-assoc-animal-health-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-assoc-animal-health-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="150" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Generalization: Inventory to Feed -->
+        <mxCell id="gen-inventory-feed" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1" source="Feed" target="Inventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Generalization: Inventory to Medicine -->
+        <mxCell id="gen-inventory-medicine" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1" source="Medicine" target="Inventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Generalization: Inventory to Equipment -->
+        <mxCell id="gen-inventory-equipment" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1" source="Equipment" target="Inventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Dependency: BiosecurityRecord to Farm -->
+        <mxCell id="dep-biosecurity-farm" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1" source="BiosecurityRecord" target="Farm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Dependency: Report to Farm -->
+        <mxCell id="dep-report-farm" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1" source="Report" target="Farm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="280" />
+              <mxPoint x="600" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Dependency: Report to Animal -->
+        <mxCell id="dep-report-animal" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1" source="Report" target="Animal">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="280" />
+              <mxPoint x="900" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Aggregation: Farm to Inventory -->
+        <mxCell id="agg-farm-inventory" style="endArrow=open;endFill=0;html=1;startArrow=diamond;startFill=0;" edge="1" parent="1" source="Farm" target="Inventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="agg-farm-inventory-label1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="250" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="agg-farm-inventory-label2" value="*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="300" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
